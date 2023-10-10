@@ -21,8 +21,8 @@ POST https://localhost:7224/api/folha/cadastrar
 Content-Type: application/json
 
 {
-    "valor": 50,
-    "quantidade" : 1000,
+    "valorHora": 50,
+    "quantidadeDeHoras" : 1000,
     "mes" : 10,
     "ano" : 2023,
     "funcionarioId" : 1

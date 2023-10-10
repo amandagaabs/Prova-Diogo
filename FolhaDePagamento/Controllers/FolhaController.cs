@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using FolhaDePagamento.Models;
-using System;
-using FolhaDePagamento.Data;
 
 namespace FolhaDePagamento.Controller;
 
@@ -10,9 +8,9 @@ namespace FolhaDePagamento.Controller;
 [ApiController]
 public class FolhaController : ControllerBase
 {
-    private readonly DataContext _context;
+    private readonly AppDataContext _context;
 
-    public FolhaController(DataContext context)
+    public FolhaController(AppDataContext context)
     {
         _context = context;
     }

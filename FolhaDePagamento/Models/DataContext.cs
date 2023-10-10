@@ -1,16 +1,18 @@
-using FolhaDePagamento.Models;
 using Microsoft.EntityFrameworkCore;
-using FolhaDePagamento.Controller;
 
-namespace FolhaDePagamento.Data
+namespace FolhaDePagamento.Models
 {
-public class DataContext : DbContext
+public class AppDataContext : DbContext
 {
     public DbSet<Funcionario> Funcionarios { get; set; }
     public DbSet<Folha> Folhas { get; set; }
 
-    public DataContext(DbContextOptions<DataContext> options) : base(options)
+    public AppDataContext(DbContextOptions<AppDataContext> options) : base(options)
     {
+                    Funcionarios = Set<Funcionario>();
+                    Folhas = Set<Folha>();
+
+
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

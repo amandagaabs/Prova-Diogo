@@ -4,7 +4,7 @@ public class Folha
 {
     public int FuncionarioId { get; set; }
 
-    public object? Nome {get; set;}
+    public Object? Nome {get; set;}
     public string? CPF { get; set; }
     public int Mes { get; set; }
     public int Ano { get; set; }

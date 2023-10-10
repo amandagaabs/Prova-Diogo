@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using FolhaDePagamento.Models;
-using System;
 
-namespace FolhaDePagamento.Controller;
-
+namespace FolhaDePagamento.Controller
+{
 // Controllers/FuncionarioController.cs
 [Route("api/[controller]")]
 [ApiController]
@@ -26,4 +25,5 @@ public class FuncionarioController : ControllerBase
         // Retorna uma lista de funcionários
         return Ok(/* lista de funcionários */);
     }
+}
 }
